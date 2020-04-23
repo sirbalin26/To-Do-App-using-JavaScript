@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			To Do
+		</title>
+		<meta name="author" content="Sirb Alin Cristian"/>
+		<meta name="description" content="To Do App"/>
+		<meta name="keywords" content="To Do, List, Remember"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+
+    <div class="root-app">
+		<div class="layout-app">
+            <label for="todo-item" class="name">Obiectiv:</label>
+            
+			<input class="search" id="todo-item-name" type="text" name="todo-item" placeholder="Adauga un obiectiv" value="" />
+
+            <label for="todo-item-important" class="name-imp">Importanta:</label>
+            
+			<select id="todo-item-important">
+				<option value="LOW">Scazut</option>
+				<option value="MEDIUM">Mediu</option>
+				<option value="HIGH">Ridicat</option>
+            </select>
+            
+			<button class="button" id="todo-add-item" type="button">Adauga</button>
+		</div>
+			
+		<div class="layout-app-section">
+			<label for="todo-item-important" class="name-filt">Filtreaza:</label>
+			<select id="todo-filter-importance">
+				<option value="LOW">Scazut</option>
+				<option value="MEDIUM">Mediu</option>
+				<option value="HIGH">Ridicat</option>
+			</select>
+		</div>
+
+		<div>
+			<p id="todo-all-low">
+			<span></span>
+			</p>
+			<p id="todo-some-medium">
+			<span></span>
+			</p>
+		</div>
+
+		<ul id="todos" contenteditable="true">
+			
+        </ul>
+    </div>
+
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
